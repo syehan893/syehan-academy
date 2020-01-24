@@ -1,0 +1,17 @@
+com\enigmacamp\controller\GenreController.class
+com\enigmacamp\App.class
+com\enigmacamp\servicesImpl\SongServiceImpl.class
+com\enigmacamp\repositories\SongRepository.class
+com\enigmacamp\repositories\ArtistRepository.class
+com\enigmacamp\entities\Song.class
+com\enigmacamp\entities\Genre.class
+com\enigmacamp\entities\Artist.class
+com\enigmacamp\services\GenreService.class
+com\enigmacamp\repositories\GenreRepository.class
+com\enigmacamp\services\ArtistService.class
+com\enigmacamp\controller\SongController.class
+com\enigmacamp\donfig\DaoSpringConfig.class
+com\enigmacamp\servicesImpl\ArtistServiceImpl.class
+com\enigmacamp\services\SongService.class
+com\enigmacamp\servicesImpl\GenreServiceImpl.class
+com\enigmacamp\controller\ArtistController.class
