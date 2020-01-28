@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+      image: mysql:5
+      restart: unless-stopped
+      command: --default-authentication-plugin=mysql_native_password --lower_case_table_names=1 --skip-ssl --character_set_server=utf8 --explicit_defaults_for_timestamp --disable-partition-engine-check
+      ports:
+        - 3306:3306
+      environment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: mulib
+        MYSQL_USER: mulib
+        MYSQL_PASSWORD: mulib
+        TZ: Asia/Jakarta
+  api:
+    image: mulib-api
+    restart: unless-stopped
+    depends_on:
+      - db
+    links:
+      - db:db-server
+    ports:
+      - 3000:8090
