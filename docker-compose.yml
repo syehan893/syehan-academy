@@ -3,9 +3,11 @@ services:
   db:
       image: mysql:5
       restart: unless-stopped
-      command: --default-authentication-plugin=mysql_native_password --lower_case_table_names=1 --skip-ssl --character_set_server=utf8 --explicit_defaults_for_timestamp --disable-partition-engine-check
+      command: --default-authentication-plugin=mysql_native_password --lower_case_table_names=1 --skip-ssl --character_set_server=utf8 --explicit_defaults_for_timestamp --disable-partition-engine-check --init-file /data/application/init.sql
       ports:
         - 3306:3306
+      volumes:
+        - ./sql/init.sql:/data/application/init.sql
       environment:
         MYSQL_ROOT_PASSWORD: password
         MYSQL_DATABASE: mulib

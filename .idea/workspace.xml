@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c9a11be9-cdea-4c8c-863c-d8584f96a1a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/entities/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/entities/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/entities/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/entities/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/entities/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/entities/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/enigmacamp/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/enigmacamp/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/enigmacamp/entities/Artist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/enigmacamp/entities/Artist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/enigmacamp/entities/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/enigmacamp/entities/Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/enigmacamp/entities/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/enigmacamp/entities/Song.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/mulib-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/mulib-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/mulib-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/mulib-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
@@ -13,6 +22,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Docker START">
+  <component name="RunManager" selected="Docker.docker-compose.yml.api: Compose Deployment">
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="project serius" />
       <extension name="coverage">
@@ -100,12 +123,42 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.Docker START" />
+      <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
       <item itemvalue="Spring Boot.App" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
         <item itemvalue="Spring Boot.App" />
       </list>
     </recent_temporary>
@@ -117,12 +170,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@454e04e4" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38397569" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@454e04e4" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@41d1d517" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38397569" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5f6f1bce" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -157,7 +210,11 @@
       <workItem from="1580091360107" duration="933000" />
       <workItem from="1580109654825" duration="3377000" />
       <workItem from="1580118591753" duration="3236000" />
-      <workItem from="1580179865029" duration="3850000" />
+      <workItem from="1580179865029" duration="11953000" />
+      <workItem from="1580265991667" duration="1465000" />
+      <workItem from="1580267710851" duration="2653000" />
+      <workItem from="1580357601117" duration="524000" />
+      <workItem from="1580700401103" duration="959000" />
     </task>
     <servers />
   </component>
